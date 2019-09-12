@@ -1,0 +1,2 @@
+C:\Users\84942\Desktop\Ewyb\Decompile\C#\obj\x86\Debug\MicroPrinter.App.csprojAssemblyReference.cache
+C:\Users\84942\Desktop\Ewyb\Decompile\C#\obj\x86\Debug\MicroPrinter.App.csproj.CoreCompileInputs.cache

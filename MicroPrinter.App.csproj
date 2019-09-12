@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D45C4DC-3C35-4FD3-A127-7C7AD941DD4E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>MicroPrinter.App</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1">
+      <HintPath>..\..\Release\DevExpress.Data.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v19.1">
+      <HintPath>..\..\Release\DevExpress.Images.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v19.1">
+      <HintPath>..\..\Release\DevExpress.Mvvm.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v19.1.Core">
+      <HintPath>..\..\Release\DevExpress.Pdf.v19.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v19.1.Core">
+      <HintPath>..\..\Release\DevExpress.Printing.v19.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.DXStyle.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.DXStyle.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.HybridApp.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.HybridApp.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.LightGray.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.LightGray.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.MetropolisDark.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.MetropolisDark.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.MetropolisLight.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.MetropolisLight.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Black.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2007Black.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Blue.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2007Blue.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Silver.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2007Silver.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Black.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2010Black.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Blue.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2010Blue.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Silver.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2010Silver.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2013.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2013.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2013DarkGray.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2013DarkGray.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2013LightGray.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2013LightGray.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016Black.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2016Black.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016BlackSE.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2016BlackSE.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016Colorful.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2016Colorful.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016ColorfulSE.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2016ColorfulSE.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016DarkGraySE.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2016DarkGraySE.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2016White.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016WhiteSE.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Office2016WhiteSE.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Seven.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.Seven.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.TouchlineDark.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.TouchlineDark.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2010.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.VS2010.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2017Blue.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.VS2017Blue.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2017Dark.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.VS2017Dark.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2017Light.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Themes.VS2017Light.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Release\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="log4net">
+      <HintPath>..\..\Release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="DevExpress.Xpf.Core.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.Core.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.LayoutControl.v19.1">
+      <HintPath>..\..\Release\DevExpress.Xpf.LayoutControl.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\..\Release\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder">
+      <HintPath>..\..\Release\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="XamlGeneratedNamespace\GeneratedInternalTypeHelper.cs" />
+    <Compile Include="MicroPrinter\App\PrinterInfo.cs" />
+    <Compile Include="MicroPrinter\App\PrintTask.cs" />
+    <Compile Include="MicroPrinter\App\AppContext.cs" />
+    <Compile Include="MicroPrinter\App\Externs.cs" />
+    <Compile Include="MicroPrinter\App\MachineSettings.cs" />
+    <Compile Include="MicroPrinter\App\HttpUtils.cs" />
+    <Compile Include="MicroPrinter\App\PrintJobInfo.cs" />
+    <Compile Include="MicroPrinter\App\App.cs" />
+    <Compile Include="MicroPrinter\App\MainWindow.cs" />
+    <Compile Include="MicroPrinter\App\PrintHelper.cs" />
+    <Compile Include="MicroPrinter\App\Model\WybAdvGroup.cs" />
+    <Compile Include="MicroPrinter\App\Model\WybAdvGroupItem.cs" />
+    <Compile Include="MicroPrinter\App\Utils\CommonUtil.cs" />
+    <Compile Include="MicroPrinter\App\Utils\HardWareInfo.cs" />
+    <Compile Include="MicroPrinter\App\Utils\UniqueID.cs" />
+    <Compile Include="MicroPrinter\App\Views\MsgDisplay.cs" />
+    <Compile Include="MicroPrinter\App\Views\TimeDisplay.cs" />
+    <Compile Include="MicroPrinter\App\Views\InTask.cs" />
+    <Compile Include="MicroPrinter\App\Views\Task.cs" />
+    <Compile Include="MicroPrinter\App\Views\PrinterStatusView.cs" />
+    <Compile Include="MicroPrinter\App\Views\MainView.cs" />
+    <Compile Include="MicroPrinter\App\Views\TaskListView.cs" />
+    <Compile Include="MicroPrinter\App\Views\Advertisement.cs" />
+    <Compile Include="MicroPrinter\App\Views\NoTask.cs" />
+    <Compile Include="MicroPrinter\App\Views\TestView.cs" />
+    <Compile Include="MicroPrinter\App\Views\Settings.cs" />
+    <Compile Include="MicroPrinter\App\Api\Common.cs" />
+    <EmbeddedResource Include="MicroPrinter.App.g.resources" />
+  </ItemGroup>
+</Project>
